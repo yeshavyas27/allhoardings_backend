@@ -9,9 +9,9 @@ Setup
     ```
 3. Create the docker image of the application 
     ```
-    sudo docker build -t allhoardings_backend .
+    docker build -t allhoardings_backend .
     ```                     
 4. Run the image / make a container
    ```
-   sudo docker-compose up
+   docker-compose up
    ```
