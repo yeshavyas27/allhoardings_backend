@@ -7,21 +7,18 @@ services:
       - python3
       - app.py
     environment:
-      FLASK_PORT: 5001
+      FLASK_PORT: 5000
       FLASK_DEBUG: 1
       FLASK_APP: ./app.py
-      FLASK_SECRET:
+      FLASK_SECRET: gdjadhasgdye
       SERVER_ENVIRONMENT: DEVELOPMENT
-      DEBUG: "False"
+      DEBUG: "True"
       AWS_ACCESS_KEY_ID:
       AWS_SECRET_ACCESS_KEY:
       AWS_DEFAULT_REGION:
-      REDIS_HOST:
-      REDIS_PORT:
-      REDIS_DB:
-      MONGO_HOST:
-      MONGO_USER:
-      MONGO_PASSWORD:
+      MONGO_HOST: "mongodb+srv://{}:{}@allhoardings.qgvrr9b.mongodb.net/?retryWrites=true&w=majority&appName=allhoardings"
+      MONGO_USER: admin
+      MONGO_PASSWORD: AIqO1Fh09vJ528oD
     volumes: [
       './:/app'
     ]
